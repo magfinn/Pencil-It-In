@@ -1,7 +1,13 @@
-body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  line-height: 1;
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.container {
+  margin-bottom: 3%;
 }
 
 textarea{
@@ -15,10 +21,13 @@ textarea{
 
 .jumbotron {
   text-align: center;
-  background-color: transparent;
+  background-color: lightgray;
+  padding: 5px;
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
+  margin: 2%;
+  padding: 2%;
 }
 
 .description{
@@ -31,8 +40,7 @@ textarea{
 }
 
 .row {
-  white-space: pre-wrap;
-  height: 80px;
+  height: auto;
   border-top: 1px solid white;;
 }
 
@@ -48,8 +56,7 @@ textarea{
 }
 
 .present {
-  background-color: #ff6961;
-  color: white;
+  background-color:red
 }
 
 .future {
@@ -65,7 +72,16 @@ textarea{
   color: white;
 }
 
-.saveBtn i:hover {
-  font-size: 20px;
-  transition: all .3s ease-in-out;
+.btn:hover {
+  color: grey;
+}
+
+footer {
+  margin-top: 3%;
+  text-align: center;
+}
+
+.today p {
+  font: bold large;
+  text-align: center;
 }
