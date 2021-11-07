@@ -1,34 +1,22 @@
 
 // Display today's day and date
 let DateTime = luxon.DateTime;
-let today = DateTime.now();
+let today = DateTime.local();
 let thisHour = DateTime.local().hour;
-// const displayDate = DateTime.DATE_HUGE;
-// const { DateTime } = require("luxon");
-//not getting date to show up
 
-// getDate = () => {
-//     var todayDate = DateTime.DATE_HUGE;
-// };
+let displayTime = document.getElementById('todaysDate');
+displayTime.textContent = today.toLocaleString(DateTime.DATE_HUGE);
 
-// //     return today.toLocalString(DateTime.DATE_HUGE);
-// //  
 
 function timeTracker() {
-    //get current number of hours.
-    // var thisHour = DateTime.local().hour;
     console.log(today);
     console.log(thisHour);
-    // displayDate = today.getItem(today.utc.DATE_MED);
-    
-    // const today = DateTime;
-    // return today.toLocalString(DateTime.DATE_HUGE);
+    var todayDate = 
+    $("#todaysDate").text(today);
 };
 
 $(document).ready(function () {
     timeTracker();
-    // getTime();
-    // getDate();
     // saveBtn click listener 
     $(".saveBtn").on("click", function () {
         var text = $(this).siblings(".description").val();
@@ -36,11 +24,6 @@ $(document).ready(function () {
 
         // Save text in local storage
         localStorage.setItem(time, text);
-        // getDate();
-        // var todayDate = document.getElementById ("todaysDate");
-        // today.innerHTML(today);
-        // console.log(today);
-        
         });
 
         // loop over time blocks
