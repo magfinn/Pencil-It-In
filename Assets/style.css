@@ -21,7 +21,7 @@ textarea{
 
 .jumbotron {
   text-align: center;
-  background-color: lightgray;
+  background-color: rgb(220, 224, 228);
   padding: 5px;
   color: black;
   border-radius: 0;
@@ -55,18 +55,28 @@ textarea{
   color: white;
 }
 
-.past .description {
+/* .past .description {
   text-decoration: transparent;
-};
+}; */
 
 .present {
-  background-color:red
+  background-color:rgb(248, 136, 136);
+  color: white;
 }
 
 .future {
-  background-color: #77dd77;
+  background-color: #89dd89;
   color: white;
 }
+
+.today {
+  align-content: center;
+}
+
+#todaysDate {
+  text-align: center;
+}
+
 
 .saveBtn {
   border-left: 1px solid black;
@@ -85,7 +95,7 @@ footer {
   text-align: center;
 }
 
-.today p {
-  font: bold large;
-  text-align: center;
-}
+/* .hide{
+  background-color: #d3d3d3;
+  opacity: 0.0;
+} */
