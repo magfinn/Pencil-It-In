@@ -4,15 +4,9 @@ let DateTime = luxon.DateTime;
 let today = DateTime.local();
 let thisHour = DateTime.local().hour;
 
-let displayTime = document.getElementById('todaysDate');
-displayTime.textContent = today.toLocaleString(DateTime.DATE_HUGE);
-
-
 function timeTracker() {
-    console.log(today);
     console.log(thisHour);
-    var todayDate = 
-    $("#todaysDate").text(today);
+    $("#todaysDate").text(today.toLocaleString());
 };
 
 $(document).ready(function () {
@@ -35,11 +29,13 @@ $(document).ready(function () {
                 $(this).removeClass("future");
                 $(this).removeClass("present");
                 $(this).addClass("past");
+               
             }
             else if (blockTime === thisHour) {
                 $(this).removeClass("past");
                 $(this).removeClass("future");
                 $(this).addClass("present");
+                
             }
             else {
                 $(this).removeClass("present");
