@@ -18,14 +18,10 @@
         <br>
         <br>
     <h3>Preview:</h3>
-    <img src="./assets/images/Pencil-It-In-preview.png"></img>
+    <img src="https://github.com/magfinn/Pencil-It-In/blob/main/Assets/Images/Pencil-It-In-preview.png"></img>
 
-    <br>
-    <br>
-    <h3>Links:</h3>
-    <ul>
-        <li>Github Repo: https://github.com/magfinn/Pencil-It-In</li>
-        <li>Published URL: https://magfinn.github.io/Pencil-It-In/</li> 
-    </ul>
+ Links:
+        Github Repo: https://github.com/magfinn/Pencil-It-In</li>
+        Published URL: https://magfinn.github.io/Pencil-It-In/</li> 
 
 
