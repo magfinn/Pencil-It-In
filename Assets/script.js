@@ -10,15 +10,15 @@ function timeTracker() {
     $("#todaysDate").text(today.toLocaleString());
 }
 
-//if it is before 6pm, run function
+//if it is before 6pm, save entries
 function saveEntries() {
-// saveBtn click listener 
-$(".saveBtn").on("click", function () {
-    var text = $(this).siblings(".description").val();
-    var time = $(this).parent().attr("id");
+    // saveBtn click listener 
+    $(".saveBtn").on("click", function () {
+        var text = $(this).siblings(".description").val();
+        var time = $(this).parent().attr("id");
 
-    // Save text in local storage
-    localStorage.setItem(time, text);
+        // Save text in local storage
+        localStorage.setItem(time, text);
     });
 
     // loop over time blocks
@@ -47,7 +47,7 @@ $(".saveBtn").on("click", function () {
     });
 }
 
-//check time && if it is past 5pm, clear. Otherwise, save description in localStorage.
+//check time && if it is past 5pm, clear contents. Otherwise, save entries.
 $(document).ready(function () {
     timeTracker();
     if(thisHour>17) {
@@ -84,4 +84,3 @@ $(document).ready(function () {
     $("#hour15 .description").val(localStorage.getItem("hour15"));
     $("#hour16 .description").val(localStorage.getItem("hour16"));
     $("#hour17 .description").val(localStorage.getItem("hour17"));
-    
