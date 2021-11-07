@@ -18,7 +18,8 @@
         <br>
         <br>
     <h3>Preview:</h3>
-    <img src="/assets/Images/Pencil-It-In-preview.png"></img>
+    <img src="./assets/images/Pencil-It-In-preview.png"></img>
+
     <br>
     <br>
     <h3>Links:</h3>
